@@ -1,0 +1,4 @@
+*.min.js
+coverage/
+*.test.js
+**/__tests__/**/
