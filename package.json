@@ -14,10 +14,14 @@
         "jest": "jest",
         "coverage": "jest --coverage",
         "test": "jest",
-        "posttest": "npm run eslint"
+        "posttest": "npm run eslint",
+        "test1": "docker-compose run node_9_alpine npm test",
+        "test2": "docker-compose run node_8_alpine npm test",
+        "test3": "docker-compose run node_7_alpine npm test"
     },
     "devDependencies": {
         "eslint": "^4.11.0",
+        "eslint-plugin-react": "^7.4.0",
         "jest": "^21.2.1"
     },
     "jest": {
