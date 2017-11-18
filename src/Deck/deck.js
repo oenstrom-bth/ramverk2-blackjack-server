@@ -1,6 +1,12 @@
 "use strict";
 
+/** Class representing a deck of cards. */
 class Deck {
+    /**
+     * Create a deck.
+     *
+     * @param {Number} nrOfDecks - Number of decks to use.
+     */
     constructor(nrOfDecks) {
         this.setup(nrOfDecks);
     }
@@ -8,7 +14,9 @@ class Deck {
 
 
     /**
-     * Setup the deck(s) of cards.
+     * Setup up the deck.
+     *
+     * @param {Number} nrOfDecks - Number of decks to use.
      */
     setup(nrOfDecks) {
         this.decks = nrOfDecks || 2;
@@ -22,7 +30,7 @@ class Deck {
 
 
     /**
-     * Restores the deck(s) and shuffle the cards.
+     * Restores the deck and shuffle the cards.
      */
     restoreAndShuffle() {
         this.setup(this.decks);
@@ -32,7 +40,7 @@ class Deck {
 
 
     /**
-     * Shuffle the deck(s) of cards.
+     * Shuffle the deck of cards.
      */
     shuffle() {
         for (let i = this.cards.length - 1; i > 0; i--) {
@@ -46,6 +54,8 @@ class Deck {
 
     /**
      * Get the last card in the card array.
+     *
+     * @returns {Number} The card id.
      */
     getCard() {
         return this.cards.pop();
