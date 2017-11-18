@@ -13,7 +13,7 @@ test("create a card", () => {
         "King", "Ace", "Two", "Three", "Four", "Five", "Six",
         "Seven", "Eight", "Nine", "Ten", "Jack", "Queen"
     ]);
-    expect(card.ranks).toEqual([10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10]);
+    expect(card.ranks).toEqual([10, 11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10]);
 });
 
 
@@ -32,7 +32,7 @@ test("get suit of the card", () => {
 
 
 test("get card rank", () => {
-    expect(card.getRank(1)).toBe(1);
+    expect(card.getRank(1)).toBe(11);
     expect(card.getRank(2)).toBe(2);
     expect(card.getRank(3)).toBe(3);
     expect(card.getRank(4)).toBe(4);
@@ -45,7 +45,7 @@ test("get card rank", () => {
     expect(card.getRank(11)).toBe(10);
     expect(card.getRank(12)).toBe(10);
     expect(card.getRank(13)).toBe(10);
-    expect(card.getRank(40)).toBe(1);
+    expect(card.getRank(40)).toBe(11);
     expect(card.getRank(41)).toBe(2);
     expect(card.getRank(42)).toBe(3);
     expect(card.getRank(43)).toBe(4);
@@ -98,7 +98,7 @@ test("get full card", () => {
         {
             suit: {name: "Hearts", abbr: "h"},
             name: "Ace",
-            rank: 1
+            rank: 11
         }
     );
     expect(card.getCard(13)).toEqual(
