@@ -1,6 +1,6 @@
 {
     "name": "ramverk2-blackjack-server",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "A blackjack server.",
     "main": "index.js",
     "author": "Olof Enström",
