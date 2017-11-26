@@ -1,6 +1,6 @@
 {
     "name": "ramverk2-blackjack-server",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A blackjack server.",
     "main": "index.js",
     "author": "Olof Enström",
@@ -10,6 +10,7 @@
         "url": "https://github.com/oenstrom/ramverk2-blackjack-server"
     },
     "scripts": {
+        "start": "node app.js",
         "eslint": "eslint .; exit 0",
         "jest": "jest",
         "coverage": "jest --coverage",
@@ -29,5 +30,9 @@
         "collectCoverageFrom": [
             "src/**/*.js"
         ]
+    },
+    "dependencies": {
+        "express": "^4.16.2",
+        "socket.io": "^2.0.4"
     }
 }

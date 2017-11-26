@@ -7,7 +7,19 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a5ea321a90f97fe77893/maintainability)](https://codeclimate.com/github/oenstrom/ramverk2-blackjack-server/maintainability)
 [![BCH compliance](https://bettercodehub.com/edge/badge/oenstrom/ramverk2-blackjack-server?branch=master)](https://bettercodehub.com/)
 
-Clone the repo.
+1. Clone the repo.
+2. `npm install`
+3. `npm start`
+4. Open `http://localhost:3000`
+5. Play around in the console.
+
+Available events
+```
+"join room"    => socket.emit("join room", "room1");
+"list rooms"   => socket.emit("list rooms");
+"leave room"   => socket.emit("leave room");
+```
+Results are logged in the server terminal.
 
 More info to come.
 
